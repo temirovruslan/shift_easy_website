@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>ShiftEasy — Simple shift tracking for construction teams</title>
+  <meta name="description" content="See who's on site, where, and for how long — live on your phone. Your crew clocks in with one tap, and timesheets are ready in one click. No paperwork, no phone calls." />
+  <link rel="canonical" href="https://shifteasy.site/" />
+  <meta name="theme-color" content="#07101f" />
+  <link rel="icon" type="image/webp" href="assets/logo.webp" />
+  <link rel="apple-touch-icon" href="assets/logo.webp" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://shifteasy.site/" />
+  <meta property="og:title" content="ShiftEasy — Simple shift tracking for construction teams" />
+  <meta property="og:description" content="See who's on site, where, and for how long — live on your phone. Your crew clocks in with one tap. No paperwork, no phone calls." />
+  <meta property="og:image" content="https://shifteasy.site/assets/shot-dashboard.png" />
+  <meta property="og:site_name" content="ShiftEasy" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ShiftEasy — Simple shift tracking for construction teams" />
+  <meta name="twitter:description" content="See who's on site, where, and for how long — live on your phone. Your crew clocks in with one tap. No paperwork." />
+  <meta name="twitter:image" content="https://shifteasy.site/assets/shot-dashboard.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="ShiftEasy home">
+        <span class="brand-logo" aria-hidden="true"><img src="assets/logo.webp" alt="" width="40" height="40" /></span>
+        <span class="brand-name">ShiftEasy</span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="https://shifteasy.site" class="nav-login">Login</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://shifteasy.site" class="btn btn-primary btn-sm">Start free trial</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="nav-mobile" id="mobileNav" aria-label="Mobile">
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="https://shifteasy.site">Login</a>
+      <a href="https://shifteasy.site" class="btn btn-primary">Start free trial</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow"><span class="live-dot"></span>Live on every site</span>
+          <h1 id="hero-heading">See who's working.<br /><span class="accent">Without making a single call.</span></h1>
+          <p class="hero-sub">Your workers tap one button when they arrive. You see everyone, live, from your phone or computer. No more group chats. No more “are you on site yet?”</p>
+
+          <ul class="hero-bullets">
+            <li><span class="check" aria-hidden="true"></span>One tap to clock in — even your least techy worker can do it</li>
+            <li><span class="check" aria-hidden="true"></span>See everyone live, on every site, right now</li>
+            <li><span class="check" aria-hidden="true"></span>Works on the app or any web browser — phone, tablet, or computer</li>
+          </ul>
+
+          <div class="hero-cta">
+            <a href="https://shifteasy.site" class="btn btn-primary btn-lg">Start free</a>
+            <button type="button" class="btn btn-ghost btn-lg" id="watchDemo">
+              <span class="play-ico" aria-hidden="true"></span>Watch how it works
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-media reveal" data-delay="120">
+          <div class="device-wrap">
+          <div class="device-glow" aria-hidden="true"></div>
+          <!-- Realistic animated phone — active shift screen -->
+          <div class="device" role="img" aria-label="ShiftEasy worker phone showing a live shift with a running elapsed-time clock">
+            <span class="device-btn device-btn-power" aria-hidden="true"></span>
+            <span class="device-btn device-btn-vol1" aria-hidden="true"></span>
+            <span class="device-btn device-btn-vol2" aria-hidden="true"></span>
+            <div class="device-screen">
+              <div class="d-statusbar">
+                <span class="d-time">9:41</span>
+                <span class="d-island" aria-hidden="true"></span>
+                <span class="d-sysicons" aria-hidden="true">
+                  <svg viewBox="0 0 18 12" width="17" height="11"><rect x="0" y="7" width="3" height="5" rx="1" fill="#fff"/><rect x="5" y="4.5" width="3" height="7.5" rx="1" fill="#fff"/><rect x="10" y="2" width="3" height="10" rx="1" fill="#fff"/><rect x="15" y="2" width="3" height="10" rx="1" fill="#fff" opacity=".35"/></svg>
+                  <svg viewBox="0 0 16 12" width="15" height="11"><path d="M8 11.2 1 4.2a9.9 9.9 0 0 1 14 0Z" fill="none" stroke="#fff" stroke-width="1.3"/><circle cx="8" cy="9.6" r="1.2" fill="#fff"/></svg>
+                  <svg viewBox="0 0 26 12" width="25" height="11"><rect x="1" y="1.5" width="21" height="9" rx="2.6" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="1.1"/><rect x="2.6" y="3.1" width="15" height="5.8" rx="1.4" fill="#fff"/><rect x="23" y="4.2" width="1.8" height="3.6" rx=".9" fill="#fff" opacity=".5"/></svg>
+                </span>
+              </div>
+
+              <div class="d-screens">
+              <div class="d-body screen screen-active">
+                <div class="d-head">
+                  <span class="d-headtext">
+                    <span class="d-eyebrow">Shift in progress</span>
+                    <span class="d-name">Rauno</span>
+                  </span>
+                  <span class="d-livebadge"><i></i>Live</span>
+                </div>
+
+                <div class="d-timer-card">
+                  <span class="d-tlabel">Elapsed time</span>
+                  <div class="d-time-big" id="elapsedTimer" aria-live="off">00:00:00</div>
+                  <span class="d-tstart">Started at 07:42 · May 28, 2026</span>
+                  <div class="d-progress"><span></span></div>
+                  <span class="d-tsub">54% of your average shift</span>
+                </div>
+
+                <div class="d-card">
+                  <span class="d-card-label">Site</span>
+                  <span class="d-card-val">Ülemiste Office Park — Foundation, Block C</span>
+                </div>
+
+                <div class="d-field">
+                  <span class="w-field-label">Notes</span>
+                  <div class="w-input w-textarea w-typing"><span id="noteText"></span><span class="d-caret" aria-hidden="true"></span></div>
+                </div>
+
+                <div class="d-field">
+                  <span class="w-field-label">Materials used <em>(optional)</em></span>
+                  <div class="w-input">Rebar · 1.2t — concrete · 12m³</div>
+                </div>
+
+                <button class="d-stop" type="button" id="heroStop">
+                  <svg viewBox="0 0 24 24" width="18" height="18"><circle cx="12" cy="12" r="10" fill="none" stroke="#ff5a52" stroke-width="1.6"/><rect x="8.5" y="8.5" width="7" height="7" rx="1.6" fill="#ff5a52"/></svg>
+                  Stop shift
+                  <span class="tap-cue" aria-hidden="true">
+                    <span class="tap-ring"></span>
+                    <svg viewBox="0 0 24 24" width="22" height="22"><path d="M9 11.5V6a1.6 1.6 0 0 1 3.2 0v5m0-1.2a1.6 1.6 0 0 1 3.2 0V11m0-.6a1.6 1.6 0 0 1 3.2 0v3.8a5.2 5.2 0 0 1-5.2 5.2h-1.6a4.2 4.2 0 0 1-3-1.3l-2.4-2.5a1.7 1.7 0 0 1 2.4-2.4l1.2 1.1V9.8a1.6 1.6 0 0 1 3.2 0" fill="#fff" stroke="#0a0f1a" stroke-width="1.1" stroke-linejoin="round"/></svg>
+                  </span>
+                </button>
+              </div>
+
+              <div class="d-body screen screen-home" hidden>
+                <div class="d-head">
+                  <span class="d-headtext">
+                    <span class="d-eyebrow">Hello 👋</span>
+                    <span class="d-name">Rauno</span>
+                  </span>
+                  <span class="w-avatar">RS</span>
+                </div>
+
+                <div class="d-card">
+                  <span class="d-card-label">Assigned site</span>
+                  <span class="d-card-val">Ülemiste Office Park — Foundation, Block C</span>
+                  <span class="w-noshift" aria-hidden="true"><i></i>No active shift</span>
+                </div>
+
+                <button class="w-start" type="button" id="heroStart">
+                  <span class="w-play">
+                    <svg viewBox="0 0 24 24" width="20" height="20"><path d="M6.5 4 20 12 6.5 20z" fill="currentColor"/></svg>
+                  </span>
+                  <span class="w-start-label">Start shift</span>
+                  <span class="w-start-sub">Ülemiste Office Park — Foundation, Block C</span>
+                  <span class="tap-cue tap-cue-start" aria-hidden="true">
+                    <span class="tap-ring"></span>
+                    <svg viewBox="0 0 24 24" width="22" height="22"><path d="M9 11.5V6a1.6 1.6 0 0 1 3.2 0v5m0-1.2a1.6 1.6 0 0 1 3.2 0V11m0-.6a1.6 1.6 0 0 1 3.2 0v3.8a5.2 5.2 0 0 1-5.2 5.2h-1.6a4.2 4.2 0 0 1-3-1.3l-2.4-2.5a1.7 1.7 0 0 1 2.4-2.4l1.2 1.1V9.8a1.6 1.6 0 0 1 3.2 0" fill="#fff" stroke="#0a0f1a" stroke-width="1.1" stroke-linejoin="round"/></svg>
+                  </span>
+                </button>
+
+                <div class="w-stats">
+                  <div class="w-stat"><strong>40h</strong><span>This week</span></div>
+                  <div class="w-stat"><strong>140h</strong><span>This month</span></div>
+                </div>
+
+                <div class="w-recent">
+                  <span class="d-card-label">Recent shifts</span>
+                  <div class="w-recent-row">
+                    <span class="w-recent-info"><strong>Sat 23 May</strong><span>10:30–19:30 · Block C</span></span>
+                    <span class="w-recent-h">9h</span>
+                  </div>
+                </div>
+              </div>
+              </div>
+
+              <div class="d-nav" aria-hidden="true">
+                <span class="d-nav-item on">
+                  <svg viewBox="0 0 24 24" width="20" height="20"><path d="M4 11 12 4l8 7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 10v9h12v-9" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Home
+                </span>
+                <span class="d-nav-item">
+                  <svg viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  History
+                </span>
+                <span class="d-nav-item">
+                  <svg viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="8.5" r="3.6" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M5 20c0-3.9 3.1-7 7-7s7 3.1 7 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                  Profile
+                </span>
+              </div>
+              <span class="d-homebar" aria-hidden="true"></span>
+            </div>
+          </div>
+
+          <!-- Floating glass info chips -->
+          <div class="p-chip p-chip-tl" aria-hidden="true">
+            <span class="ci ci-green">
+              <svg viewBox="0 0 24 24" width="18" height="18"><circle cx="12" cy="12" r="9.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m8 12 2.6 2.6L16 9" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span class="ct"><small>Clocked in</small><strong>07:42 AM</strong></span>
+          </div>
+
+          <div class="p-chip p-chip-r" aria-hidden="true">
+            <span class="ci ci-blue">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 21s-7-4.6-7-10a7 7 0 0 1 14 0c0 5.4-7 10-7 10z" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="11" r="2.6" fill="currentColor"/></svg>
+            </span>
+            <span class="ct"><small>Site</small><strong>Block C</strong></span>
+          </div>
+
+          <div class="p-chip p-chip-bl" aria-hidden="true">
+            <span class="ci ci-amber">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M3 17.5 9 11l3.5 3.5L21 6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 10V6h-4" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span class="ct"><small>This week</small><strong>38h 20m</strong></span>
+          </div>
+          </div>
+          <span class="device-hint" aria-hidden="true">
+            <span class="hint-pointer">👇</span> Try it live — tap <strong>Stop shift</strong>
+            <svg viewBox="0 0 24 24" width="14" height="14"><path d="M12 5v13M6 12.5l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </div>
+      </div>
+
+      <div class="container trust-row reveal">
+        <span class="trust-label">Made for real construction crews</span>
+        <span class="trust-sep" aria-hidden="true"></span>
+        <span>App or web</span>
+        <span class="trust-sep" aria-hidden="true"></span>
+        <span>Works on any device</span>
+        <span class="trust-sep" aria-hidden="true"></span>
+        <span>Set up in 2 minutes</span>
+      </div>
+    </section>
+
+    <!-- ================= HOW IT WORKS ================= -->
+    <section class="how" id="how" aria-labelledby="how-heading">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">How it works</span>
+          <h2 id="how-heading">Up and running in three easy steps</h2>
+        </div>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step-num">1</span>
+            <div class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M19 7v6M22 10h-6"/></svg>
+            </div>
+            <h3>Register your company</h3>
+            <p>Create your company account and add your first job site. Takes about two minutes — no setup, no IT person needed. You can add more managers and sites any time.</p>
+          </li>
+          <li class="step reveal" data-delay="100">
+            <span class="step-num">2</span>
+            <div class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.5 6.5 8.5 6 8.5-6"/></svg>
+            </div>
+            <h3>Add your crew</h3>
+            <p>Send each worker a link. They tap it, pick a password, and they're in. Android users can install the app, everyone else just opens it in their browser.</p>
+          </li>
+          <li class="step reveal" data-delay="200">
+            <span class="step-num">3</span>
+            <div class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3 2"/></svg>
+            </div>
+            <h3>Watch it live</h3>
+            <p>Your workers press Start when they arrive on site. You see who's working, where, and for how long — straight away, from your phone or computer.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= FEATURES: MANAGERS ================= -->
+    <section class="features" id="features" aria-labelledby="mgr-heading">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker kicker-blue">For managers</span>
+          <h2 id="mgr-heading">Every site and every worker, on one screen</h2>
+          <p class="section-lede">No more phone calls to find out who turned up. Open your computer or phone and see what's happening on every job, right now.</p>
+        </div>
+
+        <div class="feature-row reveal">
+          <div class="feature-text">
+            <h3>See your crew live</h3>
+            <p>Know exactly who's on the clock, which site they're at, and how long they've been there. It updates by the second.</p>
+            <ul class="mini-list">
+              <li>Who's working right now</li>
+              <li>Today's and this week's hours at a glance</li>
+              <li>Hours split by job site</li>
+            </ul>
+          </div>
+          <figure class="browser-frame">
+            <div class="video-bar" aria-hidden="true"><span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span></div>
+            <img src="assets/shot-dashboard.png" alt="ShiftEasy manager dashboard with live on-site crew, hours this week chart, and project breakdown" loading="lazy" />
+          </figure>
+        </div>
+
+        <div class="feature-row reverse reveal">
+          <div class="feature-text">
+            <h3>Run all your sites in one place</h3>
+            <p>Handle every job from one screen. Add a site, put workers on it, and keep the full record after the job is finished.</p>
+            <ul class="mini-list">
+              <li>Add as many job sites as you need</li>
+              <li>Move workers between sites in seconds</li>
+              <li>Finished jobs stay saved, nothing lost</li>
+            </ul>
+          </div>
+          <figure class="browser-frame">
+            <div class="video-bar" aria-hidden="true"><span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span></div>
+            <img src="assets/shot-projects.png" alt="ShiftEasy projects screen listing active construction sites with a detail panel" loading="lazy" />
+          </figure>
+        </div>
+
+        <div class="feature-row reveal">
+          <div class="feature-text">
+            <h3>Timesheets done for you</h3>
+            <p>Every worker, every day, laid out clean. Tap any shift to see the details, then send the whole week to payroll in one click.</p>
+            <ul class="mini-list">
+              <li>All workers and days on one sheet</li>
+              <li>See notes and materials for each shift</li>
+              <li>Export to CSV and send to payroll in seconds</li>
+            </ul>
+          </div>
+          <figure class="browser-frame">
+            <div class="video-bar" aria-hidden="true"><span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span></div>
+            <img src="assets/shot-timesheet.png" alt="ShiftEasy weekly timesheet grid with a shift detail drawer and export button" loading="lazy" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FEATURES: WORKERS ================= -->
+    <section class="workers" aria-labelledby="wrk-heading">
+      <div class="container workers-grid">
+        <div class="workers-text reveal">
+          <span class="kicker kicker-green">For your crew</span>
+          <h2 id="wrk-heading">One tap to start. One tap to stop.</h2>
+          <p class="section-lede">No training. No paperwork. Open the phone, press Start, and get to work.</p>
+
+          <ul class="worker-features reveal-stagger">
+            <li>
+              <span class="wf-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M10 9.5 15 12l-5 2.5z" fill="currentColor" stroke="none"/></svg>
+              </span>
+              <div><h3>One tap to start or stop a shift</h3><p>One press to clock in, one to clock out. The time is saved right away, so the hours are always right and nobody argues at the end of the week.</p></div>
+            </li>
+            <li>
+              <span class="wf-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3 2"/></svg>
+              </span>
+              <div><h3>Live timer, notes and materials</h3><p>The clock runs while they work. They can quickly add what they did and what materials they used, with no paperwork at the end of the day.</p></div>
+            </li>
+            <li>
+              <span class="wf-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.6-7-10a7 7 0 0 1 14 0c0 5.4-7 10-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg>
+              </span>
+              <div><h3>Their hours, their history</h3><p>Their job site is already set when they open the app. They can see every shift they've ever worked, with hours and notes — all in their pocket.</p></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="workers-phones reveal" data-delay="120" style="height: 733px">
+          <!-- Home / Start-shift screen (built UI, matches the hero phone) -->
+          <div class="wdevice wdevice-back" role="img" aria-label="ShiftEasy worker home screen with assigned site and a large start-shift button" style="width: 385px">
+            <span class="device-btn device-btn-power" aria-hidden="true"></span>
+            <span class="device-btn device-btn-vol1" aria-hidden="true"></span>
+            <span class="device-btn device-btn-vol2" aria-hidden="true"></span>
+            <div class="device-screen">
+              <div class="d-statusbar">
+                <span class="d-time">9:41</span>
+                <span class="d-island" aria-hidden="true"></span>
+                <span class="d-sysicons" aria-hidden="true">
+                  <svg viewBox="0 0 18 12" width="17" height="11"><rect x="0" y="7" width="3" height="5" rx="1" fill="#fff"/><rect x="5" y="4.5" width="3" height="7.5" rx="1" fill="#fff"/><rect x="10" y="2" width="3" height="10" rx="1" fill="#fff"/><rect x="15" y="2" width="3" height="10" rx="1" fill="#fff" opacity=".35"/></svg>
+                  <svg viewBox="0 0 16 12" width="15" height="11"><path d="M8 11.2 1 4.2a9.9 9.9 0 0 1 14 0Z" fill="none" stroke="#fff" stroke-width="1.3"/><circle cx="8" cy="9.6" r="1.2" fill="#fff"/></svg>
+                  <svg viewBox="0 0 26 12" width="25" height="11"><rect x="1" y="1.5" width="21" height="9" rx="2.6" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="1.1"/><rect x="2.6" y="3.1" width="15" height="5.8" rx="1.4" fill="#fff"/><rect x="23" y="4.2" width="1.8" height="3.6" rx=".9" fill="#fff" opacity=".5"/></svg>
+                </span>
+              </div>
+
+              <div class="d-body">
+                <div class="d-head">
+                  <span class="d-headtext">
+                    <span class="d-eyebrow">Hello 👋</span>
+                    <span class="d-name">Mart</span>
+                  </span>
+                  <span class="w-avatar">MA</span>
+                </div>
+
+                <div class="d-card">
+                  <span class="d-card-label">Assigned site</span>
+                  <span class="d-card-val">Kristiine Apartment Complex — Steel Frame, 4th Floor</span>
+                  <span class="w-noshift" aria-hidden="true"><i></i>No active shift</span>
+                </div>
+
+                <button class="w-start" type="button" aria-hidden="true">
+                  <span class="w-play">
+                    <svg viewBox="0 0 24 24" width="20" height="20"><path d="M6.5 4 20 12 6.5 20z" fill="currentColor"/></svg>
+                  </span>
+                  <span class="w-start-label">Start shift</span>
+                  <span class="w-start-sub">Kristiine Apartment Complex — Steel Frame, 4th Floor</span>
+                </button>
+
+                <div class="w-stats">
+                  <div class="w-stat"><strong>40h</strong><span>This week</span></div>
+                  <div class="w-stat"><strong>140h</strong><span>This month</span></div>
+                </div>
+
+                <div class="w-recent">
+                  <span class="d-card-label">Recent shifts</span>
+                  <div class="w-recent-row">
+                    <span class="w-recent-info"><strong>Sat 23 May</strong><span>10:30–19:30 · Steel Frame</span></span>
+                    <span class="w-recent-h">9h</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-nav" aria-hidden="true">
+                <span class="d-nav-item on">
+                  <svg viewBox="0 0 24 24" width="20" height="20"><path d="M4 11 12 4l8 7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 10v9h12v-9" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Home
+                </span>
+                <span class="d-nav-item">
+                  <svg viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  History
+                </span>
+                <span class="d-nav-item">
+                  <svg viewBox="0 0 24 24" width="20" height="20"><path d="M14 4h4a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1h-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 8 5 12l4 4M5 12h11" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Logout
+                </span>
+              </div>
+              <span class="d-homebar" aria-hidden="true"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PRICING ================= -->
+    <section class="pricing" id="pricing" aria-labelledby="price-heading">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Pricing</span>
+          <h2 id="price-heading">Free while we're getting started.</h2>
+        </div>
+
+        <div class="price-card reveal">
+          <span class="price-badge">Early access</span>
+          <div class="price-figure">
+            <span class="price-amount price-amount-free">Free</span>
+          </div>
+          <p class="price-strike">No card. No commitment. Pricing comes later — and early users get the best deal.</p>
+
+          <ul class="price-list">
+            <li>As many workers and sites as you want</li>
+            <li>Live tracking on every job</li>
+            <li>Weekly timesheets, one-click export</li>
+            <li>Easy invites — nothing to download</li>
+          </ul>
+
+          <a href="https://shifteasy.site" class="btn btn-primary btn-lg btn-block">Start free</a>
+          <p class="price-note">Get in early while it's free. You'll keep a special price when paid plans arrive.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA BANNER ================= -->
+    <section class="cta-banner" aria-labelledby="cta-heading">
+      <div class="cta-glow" aria-hidden="true"></div>
+      <div class="container cta-inner reveal">
+        <h2 id="cta-heading">Ready to track your first shift?</h2>
+        <p>Set up your first site, add your crew, and watch the hours roll in. It only takes a couple of minutes.</p>
+        <a href="https://shifteasy.site" class="btn btn-primary btn-lg">Create your free account</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="brand">
+          <span class="brand-logo" aria-hidden="true"><img src="assets/logo.webp" alt="" width="40" height="40" /></span>
+          <span class="brand-name">ShiftEasy</span>
+        </a>
+        <p class="footer-tag">Simple shift tracking for construction teams.</p>
+      </div>
+
+      <nav class="footer-col" aria-label="Product">
+        <span class="footer-label">Product</span>
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="https://shifteasy.site">Download app</a>
+      </nav>
+
+      <nav class="footer-col" aria-label="Company">
+        <span class="footer-label">Company</span>
+        <a href="https://shifteasy.site">Login</a>
+        <a href="mailto:info@shifteasy.site">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </nav>
+
+      <div class="footer-contact">
+        <span class="footer-label">Contact</span>
+        <a href="mailto:info@shifteasy.site">info@shifteasy.site</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© 2026 ShiftEasy. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <!-- ================= DEMO MODAL ================= -->
+  <div class="demo-modal" id="demoModal" aria-hidden="true">
+    <div class="demo-backdrop" data-close></div>
+    <div class="demo-dialog" role="dialog" aria-modal="true" aria-label="ShiftEasy product demo">
+      <button class="demo-close" id="demoClose" aria-label="Close demo">&times;</button>
+      <video id="demoVideo" controls playsinline preload="none" poster="assets/shot-dashboard.png">
+        <source src="assets/hero-video.webm" type="video/webm" />
+      </video>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
